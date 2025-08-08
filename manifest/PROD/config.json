@@ -1,0 +1,13 @@
+{
+    "mysql": {
+        "host": "",
+        "port": "",
+        "user": "",
+        "password": "",
+        "name": ""
+    },
+    "cacheSizeGb": 1,
+    "tables": {
+        "jobs": "CREATE TABLE IF NOT EXISTS jobs (id INT AUTO_INCREMENT PRIMARY KEY, job_id VARCHAR(255) NOT NULL, name VARCHAR(255) NOT NULL, cron_expression VARCHAR(255) NOT NULL, start_date DATETIME NOT NULL, repeat_interval VARCHAR(255) NOT NULL, params TEXT NOT NULL, created_at DATETIME NOT NULL, last_run DATETIME)"
+    }
+}
