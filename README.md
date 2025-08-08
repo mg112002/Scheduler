@@ -74,16 +74,16 @@ Prometheus metrics are exposed for monitoring:
 You can scrape these metrics from the `/metrics` endpoint (if enabled in your server setup).
 
 ## Setup & Run
-1. **Install Go** (>=1.18)
+1. **Install Go** (>=1.23)
 2. **Install dependencies:**
    ```
    go mod tidy
    ```
 3. **Run the service:**
    ```
-   go run ./main.go
+   go run main.go
    ```
-4. **API available at:** `http://localhost:8080`
+4. **API available at:** `http://localhost:8000`
 
 ## Notes
 - **Job Execution:** For POC, jobs just print their name and params. Extend `models/scheduler.go` for real logic.
@@ -99,4 +99,4 @@ You can scrape these metrics from the `/metrics` endpoint (if enabled in your se
 - Add authentication, logging, monitoring, or distributed job execution as needed.
 
 ---
-**Author:** Your Name 
+**Author:** Mangalam Gupta
